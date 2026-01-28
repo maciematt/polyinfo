@@ -1,0 +1,18 @@
+name: scrape_general
+# run `playwright install` after environmnet is done installing
+channels:
+  - anaconda
+  - conda-forge
+dependencies:
+  - python=3.12
+  - ipykernel
+  - html5lib
+  - lxml
+  - tenacity
+  - pyyaml
+  - openpyxl
+  - pip
+  - pip:
+    - pytest-playwright
+    - beautifulsoup4
+    - pandas
