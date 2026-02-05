@@ -1,4 +1,4 @@
-import base64, json
+import base64, json, pickle
  
  
 def load_poly_lvl1():
@@ -16,4 +16,7 @@ def load_poly_lvl1():
 
 
 def load_poly_lvl2():
-    pass
+    with open('../data/polymer_details.pkl', 'rb') as f:
+        lvl2_data = pickle.load(f)
+
+    return [json.loads(base64.b64decode(_["json"]).decode("utf-8")) for _ in lvl2_data.values()]
