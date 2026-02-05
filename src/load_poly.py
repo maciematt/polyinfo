@@ -1,7 +1,7 @@
 import base64, json
  
  
-def load_poly():
+def load_poly_lvl1():
 
     poly = []
 
@@ -13,3 +13,7 @@ def load_poly():
         )
 
     return poly
+
+
+def load_poly_lvl2():
+    pass
