@@ -2,3 +2,4 @@ pw_profile/*
 notebooks/data/*
 **/__pycache__
 !**/.keep
+temp/*
